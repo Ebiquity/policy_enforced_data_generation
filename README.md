@@ -15,7 +15,7 @@ python main.py {path_to_input} {t_value}
 </pre>
 
 5. The t_value argument is optional. The default t-value is 0.6. 
-Change the t_value to ensure that the synthetic data is <t_value>-close w.r.t. the original
+Change the t_value to ensure that the synthetic data is {t_value}-close w.r.t. the original
 
 ## RESULTS
 The trained generator model is saved in the directory "trained_model". The Synthetic Table is saved in "synthetic_table/synthetic_data.csv".
