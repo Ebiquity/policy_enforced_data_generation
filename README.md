@@ -18,8 +18,10 @@ The trained generator model is saved in the directory "trained_model". The Synth
 For questions or comment, you can reach out to:
 Anantaa Kotal (anantak1@umbc.edu)
 
+
 ## REFERENCE
 If you use this code, please cite the following paper:
+[About](#about)
 @inproceedings{kotal2022privetab,
   title={PriveTAB: Secure and Privacy-Preserving sharing of Tabular Data},
   author={Kotal, Anantaa and Piplai, Aritran and Chukkapalli, Sai Sree Laya and Joshi, Anupam},
