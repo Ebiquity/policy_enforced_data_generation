@@ -1,6 +1,6 @@
 # PriveTab
-This repository contains the implementation of <a href="[https://www.google.com/](https://ebiquity.umbc.edu/paper/html/id/1014/PriveTAB-Secure-and-Privacy-Preserving-sharing-of-Tabular-Data)" target="_blank">PriveTAB : Secure and Privacy-Preserving sharing of Tabular Data</a>. 
-We use <a href="https://arxiv.org/abs/1907.00503" target="_blank">CTGAN</a> as our primary generator model. CTGAN can be replaced with any conditional generator model. 
+This repository contains the implementation of <a href="[https://www.google.com/](https://ebiquity.umbc.edu/paper/html/id/1014/PriveTAB-Secure-and-Privacy-Preserving-sharing-of-Tabular-Data)">PriveTAB : Secure and Privacy-Preserving sharing of Tabular Data</a>. 
+We use <a href="https://arxiv.org/abs/1907.00503">CTGAN</a> as our primary generator model. CTGAN can be replaced with any conditional generator model. 
 The trained generator model is sampled to create a privacy-preserving synthetic dataset. The sampling process is bound 
 by the principle of <a href="https://personal.utdallas.edu/~muratk/courses/privacy08f_files/tcloseness.pdf" target="_blank">t-closeness</a>, ensuring privacy in the shared data
 
@@ -10,7 +10,7 @@ by the principle of <a href="https://personal.utdallas.edu/~muratk/courses/priva
 3. Run the code as:
 <pre>
 <code>
-python main.py <path_to_input> <t_value>
+python main.py {path_to_input} {t_value}
 </code>
 </pre>
 
@@ -32,8 +32,6 @@ If you use our model(s) or want to refer to it in a paper, please cite:
 <pre>
 Kotal, Anantaa, et al. "PriveTAB: Secure and Privacy-Preserving sharing of Tabular Data." Proceedings of the 2022 ACM on International Workshop on Security and Privacy Analytics. 2022.
 </pre>
-
-## BibTeX ##
 
 ## BibTeX ##
 
