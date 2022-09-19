@@ -52,7 +52,7 @@ class SampleTCloseData:
 
         return max(distances)
 
-    def sample_synthetic_table(self, original_data, sampling_step=10):
+    def sample_synthetic_table(self, original_data, initial_sample_size=100, sampling_step=10):
         emd_max = float('inf')
         first_step = True
 
@@ -61,7 +61,7 @@ class SampleTCloseData:
 
         while emd_max > self.t_threshold:
             if first_step:
-                synthetic_data = self.generator_model.sample(n=100)
+                synthetic_data = self.generator_model.sample(n=initial_sample_size)
                 first_step = False
             else:
                 new_samples = self.generator_model.sample(n=sampling_step)
