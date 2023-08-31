@@ -17,15 +17,15 @@ class GeneratorModel:
         if len(self.discrete_attributes) == 0:
             logging.warning("No Discrete Attribute defined")
 
-    def train_and_save_ctgan(self, epochs=300):
+    def train_and_save_ctgan(self, epochs=100):
         ctgan = CTGANSynthesizer(epochs=epochs)
-        ctgan.fit(self.data, self.discrete_attributes)
+        ctgan.fit(train_data=self.data, discrete_columns=self.discrete_attributes)
         logging.info("CTGAN model successfully trained")
 
         try:
             if not os.path.exists("trained_model"):
                 os.mkdir("trained_model")
-            ctgan.save("trained_model/generator_model.pth")
+            ctgan.save("trained_model/trained_generator.pth")
 
             logging.info("Generator model successfully saved")
         except:
